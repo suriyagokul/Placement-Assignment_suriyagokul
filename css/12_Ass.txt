@@ -1,0 +1,15 @@
+Pseudo-classes select elements based on a specific state or condition that the elements are in. They are denoted by a colon (":") followed by the pseudo-class name. 
+
+Examples of pseudo-classes:
+
+    :hover: Selects an element when the user hovers over it.
+    :active: Selects an element when it is being clicked or activated.
+    :first-child: Selects the first child element of its parent.
+
+
+Pseudo-elements target specific parts of an element's content or structure.Denoted by ::
+
+Ex - 
+
+    ::before: Inserts content before the element's content.
+    ::after: Inserts content after the element's content.

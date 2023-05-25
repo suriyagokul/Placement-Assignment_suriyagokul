@@ -1,0 +1,13 @@
+Function currying is a technique in JavaScript where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument.
+
+
+Ex: 
+    function add(a) {
+        return function(b) {
+            return a + b;
+        };
+    }
+
+const addFive = add(5); 
+
+console.log(addFive(20)); // Output: 25

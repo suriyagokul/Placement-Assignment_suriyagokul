@@ -1,0 +1,33 @@
+In event bubbling, when an event is triggered on an element, the event first triggers on the innermost element and then propagates upward through its parent elements up to the outermost element.
+
+Ex-  
+
+    <div id="outer">
+        <div id="inner">
+            <button id="button">Click me</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+        console.log('Button clicked');
+        });
+
+        document.getElementById('inner').addEventListener('click', function() {
+        console.log('Inner div clicked');
+        });
+
+        document.getElementById('outer').addEventListener('click', function() {
+        console.log('Outer div clicked');
+        });
+    </script>
+
+O/P: Button clicked
+     Inner div clicked
+     Outer div clicked
+
+Event Capture first it will capture outer, inner and child element. We have to pass true to addEventListener in event capture..
+
+O/p: Outer div clicked
+     Inner div clicked
+     Button clicked

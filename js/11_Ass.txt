@@ -1,0 +1,14 @@
+Closures are a powerful concept in JavaScript that allows functions to retain access to variables from their outer lexical environment, even after the outer function has finished executing. In simpler terms, a closure is created when a function is defined within another function and has access to the parent function's variables, even when the parent function has returned.
+
+function outerFunction() {
+  const outerVariable = 'Hello';
+
+  function innerFunction() {
+    console.log(outerVariable);
+  }
+
+  return innerFunction;
+}
+
+const closure = outerFunction();
+closure(); // Outputs: Hello

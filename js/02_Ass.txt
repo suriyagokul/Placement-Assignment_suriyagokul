@@ -1,0 +1,7 @@
+Higher-order functions in JavaScript are functions that can take other functions as arguments or return functions as results. Some commonly used higher-order functions in JavaScript include:
+
+map(): It is used to iterate over an array and perform a transformation on each element of the array. It returns a new array with the transformed elements.
+
+forEach(): It is used to iterate over an array and perform a specified action on each element. It does not return anything and is mainly used for its side effects.
+
+We have different other Hof like reduce, filter...

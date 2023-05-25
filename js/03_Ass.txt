@@ -1,0 +1,27 @@
+.call(): It is a method that allows you to invoke a function with a specified this value and arguments provided individually. It takes the this value as the first argument, followed by the function arguments separated by commas.
+
+.apply(): It is similar to .call(), but it takes the this value as the first argument, followed by an array or an array-like object containing the function arguments.
+
+.bind(): It is a method that returns a new function with a bound this value. It allows you to create a function that, when invoked, has a specific this value set, along with any initial arguments passed during binding.
+
+
+const obj = {
+  name: 'John',
+  greet: function (message) {
+    console.log(`${message}, ${this.name}!`);
+  },
+};
+
+const otherObj = {
+  name: 'Jane',
+};
+
+// Using .call()
+obj.greet.call(otherObj, 'Hello'); // Output: Hello, Jane!
+
+// Using .apply()
+obj.greet.apply(otherObj, ['Hi']); // Output: Hi, Jane!
+
+// Using .bind()
+const boundGreet = obj.greet.bind(otherObj, 'Hey');
+boundGreet(); // Output: Hey, Jane!

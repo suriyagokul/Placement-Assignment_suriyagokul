@@ -1,0 +1,5 @@
+Call Stack: It is a data structure that keeps track of function calls and their execution context. It follows the Last-In-First-Out (LIFO) principle. When a function is called, it is pushed onto the stack, and when it completes, it is popped off from it.
+
+A callback queue, also known as the task queue or message queue, is a data structure that holds callbacks and tasks that need to be executed in the future.
+
+Micro Task Queue is specifically designed to handle microtasks, which are functions scheduled to run immediately after the current task but before rendering or other tasks. 

@@ -1,0 +1,12 @@
+The this keyword in JavaScript refers to the current execution context or the object on which a method is being invoked.
+
+Ex- 
+
+    const person = {
+        name: 'John',
+        sayHello: function() {
+            console.log(`Hello, ${this.name}!`);
+        }
+    };
+
+person.sayHello(); 

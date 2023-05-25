@@ -1,0 +1,22 @@
+Debouncing is a technique used in programming to limit the frequency of a function call. It helps to optimize performance by postponing the execution of a function until after a specific period of inactivity. 
+
+function debounce(func, delay) {
+  let timeoutId;
+  
+  return function(...args) {
+    clearTimeout(timeoutId);
+    
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+}
+
+// Usage example
+function handleScroll() {
+  console.log('Scroll event debounced');
+}
+
+const debouncedScroll = debounce(handleScroll, 200);
+
+window.addEventListener('scroll', debouncedScroll);

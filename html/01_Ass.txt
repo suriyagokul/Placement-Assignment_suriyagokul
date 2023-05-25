@@ -1,0 +1,1 @@
+<!DOCTYPE html> is not a tag of HTML. It is called a document type declaration, which informs the web browser about the version of HTML used in the document. It is placed at the very beginning of an HTML document and helps the browser to render page correctly.

@@ -1,0 +1,21 @@
+Promises provide a way to handle asynchronous operations in a more readable and manageable way. Promises have three states: pending, fulfilled, and rejected.
+
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = { id: 1, name: 'John Doe' };
+      // Simulating a successful operation
+      resolve(data);
+      // Simulating an error
+      // reject('Error occurred');
+    }, 2000);
+  });
+}
+
+fetchData()
+  .then((result) => {
+    console.log('Data:', result);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
