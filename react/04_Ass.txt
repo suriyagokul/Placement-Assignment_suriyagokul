@@ -1,0 +1,17 @@
+Functional Components:
+
+    Functional components are defined as JavaScript functions.
+    They receive props as a parameter and return JSX/elements.
+    Functional components are simpler and easier to read and write.
+    They do not have access to the React lifecycle methods or state management.
+    They are primarily used for simpler UI components or for components that do not require complex logic.
+  
+    We have access to hooks like useState, useEffect,useContext...
+    
+    
+Class Components:
+
+    Class components are defined as JavaScript classes that extend the React.Component class.
+    They have access to the React lifecycle methods and state management through the this keyword.
+    Class components can have a more complex structure and handle more advanced logic.
+    They are used when components need to manage state, utilize lifecycle methods, or handle more complex behavior.
