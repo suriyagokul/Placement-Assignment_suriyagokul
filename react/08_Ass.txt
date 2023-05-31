@@ -1,0 +1,13 @@
+The useEffect Hook is another important React Hook that allows functional components to perform side effects and handle lifecycle events. 
+It replaces the need for lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount. 
+
+
+    Side effects and async operations: 
+    
+        The useEffect Hook provides a way to perform side effects, such as making API calls, subscribing to events, or updating the document title. 
+        It allows functional components to handle async operations without introducing additional lifecycle methods or class components.
+
+    Declarative and centralized: 
+    
+        With the useEffect Hook, side effects are declared directly within the component, making the code more readable and centralized. 
+        The dependencies for the effect are explicitly listed, making it easier to understand and reason about the component's behavior.
