@@ -1,0 +1,21 @@
+The lifecycle of React components refers to the series of stages or phases that a component goes through from its initialization to its removal from the DOM. 
+The lifecycle methods allow developers to control and manage component behavior at different stages.
+
+Mounting Phase:
+
+  constructor(): Initializes the component and sets its initial state.
+  render(): Renders the component's JSX/elements.
+  componentDidMount(): Invoked immediately after the component is inserted into the DOM. It is often used to perform API calls, subscriptions, or initialize timers.
+
+
+Updating Phase:
+
+  shouldComponentUpdate(): Determines if the component should re-render or not. It allows for performance optimization by preventing unnecessary re-renders.
+  render(): Renders the updated JSX/elements.
+  componentDidUpdate(): Invoked immediately after the component updates and re-renders. It is often used for side effects, 
+  such as updating the DOM or making additional API calls.
+
+
+Unmounting Phase:
+
+   componentWillUnmount(): Invoked just before the component is removed from the DOM. It is used to clean up resources, event listeners, or cancel pending requests.
