@@ -1,0 +1,14 @@
+The useState is a React Hook that allows functional components to manage state. It is one of the most commonly used hooks in React. 
+
+
+Advantages
+
+    Multiple state values: 
+
+        The useState Hook allows multiple state values to be managed within a single functional component. 
+        Each state value is independent of others, making it easier to organize and manage component state.
+
+    Automatic re-rendering: 
+    
+        When the state value managed by useState changes, React automatically re-renders the component to reflect the updated state. 
+        This simplifies the process of updating the UI based on changes in state.
