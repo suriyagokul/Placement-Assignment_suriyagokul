@@ -1,0 +1,15 @@
+Hooks are a feature introduced in React 16.8 that allow developers to use state and other React features in functional components without needing to write a class. 
+Hooks are functions that enable developers to "hook into" React features.
+
+
+Some commonly used React hooks include:
+
+    useState(): Allows functional components to manage state by providing a state value and a function to update that state.
+
+    useEffect(): Enables functional components to perform side effects (such as data fetching or subscribing to events) and respond to component updates.
+
+    useContext(): Provides functional components access to the value of a context object created by the React.createContext() method.
+
+    useReducer(): Allows functional components to manage complex state and state transitions using a reducer function.
+
+    useCallback(): Memoizes a function, preventing it from being re-created on each render, improving performance in certain scenarios.
