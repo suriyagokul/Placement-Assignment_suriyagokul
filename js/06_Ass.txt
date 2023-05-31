@@ -1,0 +1,43 @@
+Explanation for Execution of Code Snippet 1
+  
+  console.log('First');
+  setTimeout(() => console.log('Second'), 0);
+  console.log('Third');
+  
+  O/P ---> First 
+           Third
+           Second
+
+The execution starts with the first line of code, console.log('First');. This line logs the string 'First' to the console.
+The next line is setTimeout(() => console.log('Second'), 0);. The setTimeout function schedules the provided 
+callback function (() => console.log('Second')) to be executed after a delay of 0 milliseconds. Since the delay is 0, the callback will be added to the event queue immediately.
+The execution continues to the next line, console.log('Third');. This line logs the string 'Third' to the console.
+At this point, the main thread of execution is completed, and the event loop starts processing the event queue. 
+The callback function () => console.log('Second') from the setTimeout call is pulled from the event queue and executed. It logs the string 'Second' to the console.
+
+Explanation for Execution of Code Snippet 2
+
+  console.log('First');
+  function secondCall() {
+    console.log('Second');
+  }
+  setTimeout(secondCall, 2000);
+  setTimeout(() => console.log('Third'), 0);
+  console.log('Third');
+  
+ O/P:  First
+       Third
+       Second
+       Third
+    
+The execution starts with the first line of code, console.log('First');. This line logs the string 'First' to the console.
+The next line defines a function named secondCall that logs the string 'Second' to the console.
+The next line is setTimeout(secondCall, 2000);. The setTimeout function schedules the secondCall function to be executed after a delay of 2000 milliseconds (2 seconds).
+It will be added to the event queue after the specified delay.
+The next line is setTimeout(() => console.log('Third'), 0);. This setTimeout call schedules an arrow function to be executed after a delay of 0 milliseconds, 
+immediately adding it to the event queue.
+The next line is console.log('Third');. This line logs the string 'Third' to the console.
+At this point, the main thread of execution is completed, and the event loop starts processing the event queue. 
+Since the delay of the second setTimeout call is 2000 milliseconds, the callback function (secondCall) will be executed first.
+After a 2-second delay, the secondCall function is pulled from the event queue and executed. It logs the string 'Second' to the console.
+Finally, the arrow function from the second setTimeout call is pulled from the event queue and executed. It logs the string 'Third' to the console.
