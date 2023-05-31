@@ -1,0 +1,14 @@
+Lifecycle methods in React are special methods that are invoked at different stages of a component's life, from its initialization to its removal from the DOM.
+
+
+    Initialization: Lifecycle methods like constructor() and componentWillMount() allow for initializing the component's state, setting default props, 
+    and performing any necessary setup before rendering.
+
+    Side Effects: Lifecycle methods such as componentDidMount() and componentDidUpdate() provide a way to interact with the browser's DOM or perform other side effects. 
+    For example, making API calls, subscribing to events, or updating the document title.
+
+    Performance Optimization: Lifecycle methods like shouldComponentUpdate() allow developers to control whether a component should re-render or not. 
+    By implementing custom logic in this method, unnecessary re-renders can be avoided, improving performance.
+
+    Cleanup: The componentWillUnmount() method allows developers to clean up resources, event listeners, 
+    or cancel pending requests before a component is removed from the DOM.
