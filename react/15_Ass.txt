@@ -1,0 +1,21 @@
+Prop drilling is a term used in software development, specifically in the context of React or other component-based frameworks, 
+to describe the process of passing down props (properties) through multiple levels of nested components in order to reach a component that actually needs them. 
+
+
+Prop drilling can lead to several issues, including:
+
+    Code complexity: As the number of components and the depth of nesting increases, the process of passing down props becomes cumbersome and 
+    can make the codebase more difficult to maintain and understand.
+
+    Maintenance challenges: If a prop needs to be changed or updated, it may require modifying multiple components that are involved in the prop drilling process, 
+    even if they don't directly use the prop. This can introduce potential errors and increase the effort required for maintenance.
+    
+    
+To avoid prop drilling, there are several techniques and patterns you can apply:
+
+      Context API: React's Context API allows you to create a context object that can be accessed by nested components without explicitly passing props through
+      each intermediate component. Context provides a way to share data between components without the need for explicit prop passing. 
+      By defining the context at a higher level and consuming it where needed, you can avoid prop drilling.
+
+      State management libraries: Utilizing state management libraries like Redux or MobX can help centralize and manage the application's state, 
+      making it accessible to any component in the component tree without prop drilling. These libraries provide a global state store that can be accessed from any component.
